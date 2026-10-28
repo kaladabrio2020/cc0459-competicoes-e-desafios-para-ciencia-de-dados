@@ -30,8 +30,8 @@ jobs:
 
       - name: Enviar submissão para a competição
         env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_KEY }}
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
           kaggle competitions submit kaggriculture -f submission.tar.gz -m "Submissao automatica commit ${{ github.sha }}"
-

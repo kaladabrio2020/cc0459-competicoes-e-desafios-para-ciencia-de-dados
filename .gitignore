@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Kaggle & Local Test Outputs
+kaggle.json
+resultado.html
+submission.tar.gz
